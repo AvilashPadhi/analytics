@@ -142,5 +142,5 @@ summary(df1)
 df1[marks>50 & gender =="F",c("rollno","sname","gender","marks")]
 names(df1) #names of columns
 aggregate(df1$marks, by=list(df1$gender), FUN=max)
-
+#check sir's notes
 #Lists----
