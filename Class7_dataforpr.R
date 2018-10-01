@@ -39,3 +39,4 @@ View(pca$rotation)
 biplot(pca)
 scatterplot(pca$rotation[1:20,1],pca$rotation[1:20,2])
 text(pca$rotation[1:20,1],pca$rotation[1:20,2],labels=colnames(d)[2:21])
+vif(ft1) #since Rsquare is 0, all principal components have zero colinearity with others. Multi colinearity is completely eliminated
